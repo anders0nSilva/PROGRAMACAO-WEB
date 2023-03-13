@@ -1,0 +1,30 @@
+.cabeca{
+    text-align: justify;
+}
+
+#graduacao{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0000ff;
+}
+
+#telematica{
+    color: #ffa500;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#engenharia{
+    color: #008000;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+#quimica{
+    color: #ff0000;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
