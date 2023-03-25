@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Exercicio 8</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function fatorialInteiros(){
+                var numeros = document.getElementById("txtNumeros").value;
+                document = numeros.split(",");
+                const resultados = [];
+                for (var i = 0; i < numeros.length; i++) {
+                    var fatorial = 1;
+                    for (var j = 1; j <= numeros[i]; j++) {
+                        fatorial *= j;
+                    }
+                    resultados.push(fatorial);
+                }
+                document.write("A soma dos fatoriais: " + resultados);
+            }
+        </script>
+    </head>
+    <body>
+        " Numeros: "
+        <input type="text" id="txtNumeros">
+        <input type="button" value="Fatorial dos Inteiros!" onclick="fatorialInteiros()">
+    </body>
+</html>

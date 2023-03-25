@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Exercicio 6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function ordenarInteiros(){
+                var numeros = document.getElementById("txtNumeros").value;
+                numeros = numeros.split(",");
+                numeros.sort(function(a, b) {
+                    return a - b;
+                });
+                document.write("Os numeros ordenados são: " + numeros);
+            }
+        </script>
+    </head>
+    <body>
+        " Numeros: "
+        <input type="text" id="txtNumeros">
+        <input type="button" value="Ordenar Inteiros!" onclick="ordenarInteiros()">
+    </body>
+</html>

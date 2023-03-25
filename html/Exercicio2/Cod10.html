@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Exercicio 10</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function inverterNumeros(){
+                var numeros = document.getElementById("txtNumeros").value;
+                var inver = '';
+                for (var i = numeros.length - 1; i >= 0; i--){
+                    inver += numeros[i];
+                }
+                document.write("Numeros invertidos : " + inver);
+            }
+        </script>
+    </head>
+    <body>
+        " Numeros: "
+        <input type="text" id="txtNumeros">
+        <input type="button" value="Inverter Numeros!" onclick="inverterNumeros()">
+    </body>
+</html>

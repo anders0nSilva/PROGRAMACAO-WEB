@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Exercicio 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function somarImpares(txtNumeros) {
+                var numeros = document.getElementById("txtNumeros").value;
+                numeros = numeros.split(",");
+                var soma = 0;
+                for (var i = 0; i < numeros.length; i++){
+                    if ( numeros[i] % 2 != 0 && numeros[i] % 3 === 0)
+                        soma += i;
+                }
+                document.write("A soma dos impares inteiros: " + soma);
+            }
+        </script>
+    </head>
+    <body>
+        " Numeros: "
+        <input type="text" id="txtNumeros">
+        <input type="button" value="Soma dos Impares!" onclick="somarImpares()">
+    </body>
+</html>
